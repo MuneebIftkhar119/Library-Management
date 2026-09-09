@@ -153,6 +153,11 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
+scheduler_events = {
+	"daily": [
+		"library_management.tasks.mark_overdue_transactions"
+	]
+}
 
 # scheduler_events = {
 # 	"all": [
